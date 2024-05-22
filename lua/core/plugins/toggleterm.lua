@@ -14,7 +14,7 @@ local M = {
           return vim.o.columns * 0.4
         end
       end,
-      open_mapping = "<C-n>",
+      open_mapping = "<C-h>",
       shading_factor = "1", -- the percentage by which to lighten terminal background, default: -30 (gets multiplied by -3 if background is light)
       direction = "float", -- 'vertical' | 'horizontal' | 'window' | 'float',
       autochdir = true,
