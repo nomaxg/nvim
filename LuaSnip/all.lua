@@ -14,4 +14,3 @@ return {
     { t("Another snippet.") }
   ),
 }
-

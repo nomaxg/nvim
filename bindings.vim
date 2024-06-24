@@ -59,6 +59,8 @@ nmap <leader>ck :CoqUndo<CR>
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
 
+nmap <leader>co :e ~/.config/nvim/bindings.vim<CR>
+
 " Line number
 set number
 set autoread
