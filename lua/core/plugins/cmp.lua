@@ -7,6 +7,7 @@ local M = {
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-calc",
     "lukas-reineke/cmp-rg",
+    "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
   },
   config = function()
@@ -35,8 +36,7 @@ local M = {
         ['<C-n>'] = cmp.mapping(cmp.mapping.select_next_item()),
         ['<C-p>'] = cmp.mapping(cmp.mapping.select_prev_item()),
         ["<CR>"] = cmp.mapping.confirm({
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = false,
+          select = true,
         }),
       },
       sources = sources,
