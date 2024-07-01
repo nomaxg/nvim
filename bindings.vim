@@ -51,6 +51,8 @@ nmap <leader>bd :bd<CR>
 " Quick json format
 nmap <leader>jq :%!jq '.'<CR>
 
+nmap <leader>oh :OpenInGHFile<CR>
+
 " Coq shortcuts
 " From https://github.com/whonore/Coqtail
 nmap <leader>cj :CoqNext<CR>
