@@ -28,6 +28,7 @@ return {
       -- list of servers for mason to install
       ensure_installed = {
         "solang",
+        "ocamllsp",
         "solidity_ls",
         "tsserver",
         "gopls",
@@ -45,6 +46,7 @@ return {
         "black",    -- python formatter
         "pylint",   -- python linter
         "stylua",
+        "ocamlformat",
         "goimports",
       },
     })

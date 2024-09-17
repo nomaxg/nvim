@@ -103,4 +103,15 @@ set expandtab
 " center cursor vertically when scrolling
 set so=999
 
+" stop screen from shifting when errors pop up
+set signcolumn=yes:1
+
+
+" some nice auto matchings
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
 
