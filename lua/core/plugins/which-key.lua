@@ -12,12 +12,17 @@ return {
   },
   config = function(_, opts)
     local wk = require("which-key")
+    -- surpress warnings
+    opts.notify = false
     wk.setup(opts)
-    wk.register({
-      f = {
-        name = "file", -- optional group name
-        f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
+    wk.register(
+      {
+        f = {
+          name = "file",                                        -- optional group name
+          f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
+        },
       },
-    }, { prefix = "<leader>" })
+      { prefix = "<leader>" }
+    )
   end,
 }

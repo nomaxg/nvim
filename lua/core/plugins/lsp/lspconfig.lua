@@ -14,7 +14,7 @@ return {
 
     local keymap = vim.keymap -- for conciseness
 
-    local opts = { noremap = true, silent = true, inlay_hints = { enabled = true } }
+    local opts = { noremap = true, silent = true }
     local on_attach = function(client, bufnr)
       opts.buffer = bufnr
 
@@ -76,18 +76,18 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure gopls server
-    lspconfig["gopls"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
+    -- -- configure gopls server
+    -- lspconfig["gopls"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
+    --
+    -- -- configure typescript server with plugin
+    -- lspconfig["tsserver"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
+    --
     -- configure python server
     lspconfig["pyright"].setup({
       capabilities = capabilities,
@@ -96,12 +96,6 @@ return {
 
     -- configure lua server
     lspconfig["lua_ls"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure solidity server
-    lspconfig["solidity_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })

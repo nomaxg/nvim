@@ -27,12 +27,12 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "solang",
+        -- "solang",
         "ocamllsp",
-        "solidity_ls",
-        "tsserver",
-        "gopls",
-        "solc",
+        -- "solidity_ls",
+        -- "tsserver",
+        -- "gopls",
+        -- "solc",
         "pyright",
         "lua_ls",
       },
@@ -42,12 +42,12 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier", -- prettier formatter
-        "black",    -- python formatter
-        "pylint",   -- python linter
+        -- "prettier", -- prettier formatter
+        "black",  -- python formatter
+        "pylint", -- python linter
         "stylua",
         "ocamlformat",
-        "goimports",
+        -- "goimports",
       },
     })
   end,

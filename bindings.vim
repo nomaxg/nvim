@@ -7,23 +7,8 @@ autocmd BufWritePre * lua vim.lsp.buf.format()
 let mapleader = "\<Space>"
 filetype plugin indent on
 syntax on
-call plug#begin('~/.vim/plugged')
-Plug 'folke/tokyonight.nvim'
-" Fuzzy finder
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'neovim/nvim-lspconfig'
-Plug 'simrat39/rust-tools.nvim'
-Plug 'junegunn/fzf.vim'
-Plug 'voldikss/vim-floaterm'
-Plug 'airblade/vim-rooter'
-Plug 'preservim/nerdtree'
-Plug 'whonore/Coqtail'
 
-call plug#end()
-
-colorscheme tokyonight
-
+" colorscheme tokyonight
 
 " Open hotkeys
 vnoremap <C-C> "+y
